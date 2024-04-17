@@ -3,27 +3,34 @@
 
 using namespace std;
 
+/*A Node for Doubly LinkedList*/
 class Node
 {
+    /*Public Access Specifier*/
     public :
     
-    int data;
+    int data;/*data*/
     
-    Node* prev;
-    Node* next;
+    Node* prev;/*pointer to previous Node*/
+    Node* next;/*Pointer to Next Node*/
     
-}*first = NULL;
+}*first = NULL;/*First Node is Initialized to zero*/
 
+/*A Function that Creates Doubly Linked List*/
+/* Takes An Array and N integers as an input*/
 void create(int A[], int n)
 {
+    /* A pointer of data type Node*/
     Node *t, *last;
     int i;
     
+    /*First Node is Created */
     first = new Node;
-    first-> data = A[0];
-    first->prev = first->next = NULL;
+    first-> data = A[0];/*First Node Points to the first element*/
+    first->prev = first->next = NULL;/*First Node's prev and next points to NULL*/
     last = first;
     
+    /* Using for loop for iteration*/
     for( i = 1 ; i<n; i++)
     {
         t = new Node;
@@ -62,7 +69,7 @@ int Length(Node *p)
     return len;
 }
 
-
+/*Into the main Function*/
 int main()
 {
     int A[]= {10,20,30,40,50};
