@@ -3,6 +3,16 @@
  * @brief Implementation of a dynamic Array data structure
  */
 
+/**
+ * @file Arrayadt.cpp
+ * @author  Sauharda Meher Shrestha (sauhardameher@gmail.com)
+ * @brief  This File is Designated for Array ADT
+ * @version 0.1
+ * @date 2024-11-23
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <iostream>
 using namespace std;
 
