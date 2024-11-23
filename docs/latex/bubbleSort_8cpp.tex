@@ -1,0 +1,118 @@
+\hypertarget{bubbleSort_8cpp}{}\doxysection{/home/sauharda/\+Desktop/\+Data-\/\+Structures-\/and-\/\+Algorithms-\/in-\/\+C-\//bubble\+Sort.cpp File Reference}
+\label{bubbleSort_8cpp}\index{/home/sauharda/Desktop/Data-\/Structures-\/and-\/Algorithms-\/in-\/C-\//bubbleSort.cpp@{/home/sauharda/Desktop/Data-\/Structures-\/and-\/Algorithms-\/in-\/C-\//bubbleSort.cpp}}
+
+
+This file demonstrates the use of Bubble Sort Algorithm.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for bubble\+Sort.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{bubbleSort_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{bubbleSort_8cpp_a4dce709f8ab4d9546ecb4af87ef8c6d1}{Print}} (T \&vec, int n, string s)
+\begin{DoxyCompactList}\small\item\em Template function to print array elements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bubbleSort_8cpp_acd3415eef442ced2b5e064f95f04b624}{swap}} (int $\ast$x, int $\ast$y)
+\begin{DoxyCompactList}\small\item\em Swaps two integer values using pointers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bubbleSort_8cpp_ada5b75a2ffbad5a4ba1d2286319bfac4}{Bubble\+Sort}} (int A\mbox{[}$\,$\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em Implements the Bubble Sort algorithm to sort an integer array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{bubbleSort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function to demonstrate Bubble Sort implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file demonstrates the use of Bubble Sort Algorithm. 
+
+\begin{DoxyAuthor}{Author}
+Sauharda Meher Shrestha(\href{mailto:sauhardameher@gmail.com}{\texttt{ sauhardameher@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/11-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bubbleSort_8cpp_ada5b75a2ffbad5a4ba1d2286319bfac4}\label{bubbleSort_8cpp_ada5b75a2ffbad5a4ba1d2286319bfac4}} 
+\index{bubbleSort.cpp@{bubbleSort.cpp}!BubbleSort@{BubbleSort}}
+\index{BubbleSort@{BubbleSort}!bubbleSort.cpp@{bubbleSort.cpp}}
+\doxysubsubsection{\texorpdfstring{BubbleSort()}{BubbleSort()}}
+{\footnotesize\ttfamily void Bubble\+Sort (\begin{DoxyParamCaption}\item[{int}]{A\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Implements the Bubble Sort algorithm to sort an integer array. 
+
+Uses an optimized version with a flag to detect if array is already sorted 
+\begin{DoxyParams}{Parameters}
+{\em A} & \mbox{\hyperlink{classArray}{Array}} to be sorted \\
+\hline
+{\em n} & Size of the array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bubbleSort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{bubbleSort_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{bubbleSort.cpp@{bubbleSort.cpp}!main@{main}}
+\index{main@{main}!bubbleSort.cpp@{bubbleSort.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function to demonstrate Bubble Sort implementation. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 on successful execution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bubbleSort_8cpp_a4dce709f8ab4d9546ecb4af87ef8c6d1}\label{bubbleSort_8cpp_a4dce709f8ab4d9546ecb4af87ef8c6d1}} 
+\index{bubbleSort.cpp@{bubbleSort.cpp}!Print@{Print}}
+\index{Print@{Print}!bubbleSort.cpp@{bubbleSort.cpp}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void Print (\begin{DoxyParamCaption}\item[{T \&}]{vec,  }\item[{int}]{n,  }\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Template function to print array elements. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Template parameter for generic array type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & Reference to the array to be printed \\
+\hline
+{\em n} & Size of the array \\
+\hline
+{\em s} & String message to display before printing array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bubbleSort_8cpp_acd3415eef442ced2b5e064f95f04b624}\label{bubbleSort_8cpp_acd3415eef442ced2b5e064f95f04b624}} 
+\index{bubbleSort.cpp@{bubbleSort.cpp}!swap@{swap}}
+\index{swap@{swap}!bubbleSort.cpp@{bubbleSort.cpp}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Swaps two integer values using pointers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Pointer to first integer \\
+\hline
+{\em y} & Pointer to second integer \\
+\hline
+\end{DoxyParams}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['myprimeexception_39',['MyPrimeException',['../classMyPrimeException.html',1,'']]]
+  ['myprimeexception_47',['MyPrimeException',['../classMyPrimeException.html',1,'']]]
 ];

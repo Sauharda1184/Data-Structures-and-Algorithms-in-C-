@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main_17',['main',['../Arrayadt_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Arrayadt.cpp']]],
-  ['myprimeexception_18',['MyPrimeException',['../classMyPrimeException.html',1,'']]]
+  ['isempty_17',['isEmpty',['../classQueue.html#a65d9b23c23c917faa44981539bc34be7',1,'Queue::isEmpty()'],['../classStack.html#aa6b2fde9836f660ded85d0cbffaf415f',1,'Stack::isEmpty()']]],
+  ['isfull_18',['isFull',['../classQueue.html#a794d36459217d30fe1324fc9f435274b',1,'Queue::isFull()'],['../classStack.html#ae1e6e7a49205e494a3ba017a64877b3f',1,'Stack::isFull()']]],
+  ['isprime_19',['isPrime',['../classNumber.html#ac40dc21c4e0bec37e32238e956989a02',1,'Number']]]
 ];

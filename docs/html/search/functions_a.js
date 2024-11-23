@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rectangle_70',['Rectangle',['../classRectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../classRectangle.html#a9476bbf78ef37a6c35f5967a0fab4d1d',1,'Rectangle::Rectangle(int l, int b)']]]
+  ['queue_84',['Queue',['../classQueue.html#a700a33f52783f25b9ebd25d67ffb504a',1,'Queue']]]
 ];

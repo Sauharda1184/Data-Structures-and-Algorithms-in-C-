@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['queue_26',['Queue',['../classQueue.html',1,'Queue'],['../classQueue.html#a700a33f52783f25b9ebd25d67ffb504a',1,'Queue::Queue()']]]
+  ['node_24',['Node',['../classNode.html',1,'']]],
+  ['number_25',['Number',['../classNumber.html',1,'Number'],['../classNumber.html#a50e08531b92837b8aa9ab16eeb91f542',1,'Number::Number()']]]
 ];
