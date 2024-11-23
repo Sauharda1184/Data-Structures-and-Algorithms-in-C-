@@ -2,6 +2,10 @@
 
 using namespace std;
 
+/**
+ * @class Node
+ * @brief Represents a node in a singly linked list
+ */
 class Node 
 {
     // @post : public access specifier
@@ -14,18 +18,21 @@ class Node
     Node *next;
 };
 
-//into the main function
+/**
+ * @brief Main function to demonstrate linked list creation and traversal
+ * @return 0 on successful execution
+ */
 int main()
 {
-    // an array of 5 elements
+    /** @brief Initialize array with 5 elements */
     int A[]= { 3, 5, 7, 8, 10};
 
-
-    //pointer to head of node
+    /** @brief Pointer to head node of the linked list */
     Node* head = new Node; //memory allocation in heap
 
 // pointer to temporary node
     Node* temp;
+    /** @brief Pointer to track the last node in the list */
     Node* last; //pointer to last node
 
 //head = first element that is 3
@@ -60,7 +67,10 @@ int main()
 
     }
 
-
+    /**
+     * @brief Traverse and print the linked list
+     * @note Prints each node's data with space separator
+     */
     Node* p = head;
 
     while( p != nullptr)

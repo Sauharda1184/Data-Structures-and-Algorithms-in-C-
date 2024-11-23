@@ -2,6 +2,9 @@
 
 using namespace std;
  
+/**
+ * @brief A class implementing a basic queue data structure using an array
+ */
 class Queue{
 private:
     int size;
@@ -9,12 +12,38 @@ private:
     int rear;
     int* Q;
 public:
+    /**
+     * @brief Constructs a new Queue object
+     * @param size The maximum size of the queue
+     */
     Queue(int size);
+    /**
+     * @brief Destroys the Queue object and frees allocated memory
+     */
     ~Queue();
+    /**
+     * @brief Checks if the queue is full
+     * @return true if queue is full, false otherwise
+     */
     bool isFull();
+    /**
+     * @brief Checks if the queue is empty
+     * @return true if queue is empty, false otherwise
+     */
     bool isEmpty();
+    /**
+     * @brief Adds an element to the rear of the queue
+     * @param x The element to be added
+     */
     void enqueue(int x);
+    /**
+     * @brief Removes and returns the front element from the queue
+     * @return The front element if queue is not empty, -1 if queue is empty
+     */
     int dequeue();
+    /**
+     * @brief Displays all elements in the queue
+     */
     void display();
 };
  
@@ -73,6 +102,10 @@ void Queue::display() {
     cout << endl;
 }
  
+/**
+ * @brief Main function to demonstrate Queue operations
+ * @return 0 on successful execution
+ */
 int main() {
  
     int A[] = {1, 3, 5, 7, 9};

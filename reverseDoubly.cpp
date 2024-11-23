@@ -4,6 +4,9 @@
 
 using namespace std;
  
+/**
+ * Node class represents a single node in a linked list
+ */
 class Node{
 public:
     int data;
@@ -12,6 +15,11 @@ public:
  
 Node* head = new Node;
  
+/**
+ * Creates a singly linked list from an array
+ * @param A Array containing elements to create the linked list
+ * @param n Size of the array
+ */
 void create(int A[], int n){
     Node* temp;
     Node* tail;
@@ -29,6 +37,11 @@ void create(int A[], int n){
     }
 }
  
+/**
+ * Finds the middle node using length calculation method
+ * Time Complexity: O(n)
+ * @param p Pointer to the head of the linked list
+ */
 void middleNode1(Node* p){
     int length = 0;
     while (p){
@@ -44,6 +57,11 @@ void middleNode1(Node* p){
     cout << "Middle Element (Method-I): " << q->data << endl;
 }
  
+/**
+ * Finds the middle node using two-pointer technique
+ * Time Complexity: O(n)
+ * @param p Pointer to the head of the linked list
+ */
 void middleNode2(Node* p){
     Node* q = p;
     while (q){
@@ -58,6 +76,12 @@ void middleNode2(Node* p){
     cout << "Middle Element (Method-II): " << p->data << endl;
 }
  
+/**
+ * Finds the middle node using stack method
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * @param p Pointer to the head of the linked list
+ */
 void middleNode3(Node* p){
     stack<Node*> s;
     while (p){
@@ -73,7 +97,10 @@ void middleNode3(Node* p){
     cout << "Middle Element (Method-III): " << s.top()->data << endl;
 }
  
- 
+/**
+ * Main function to demonstrate middle node finding algorithms
+ * @return 0 on successful execution
+ */
 int main() {
  
     int A[] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21};

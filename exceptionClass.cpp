@@ -1,109 +1,119 @@
-// C++ program to illustrate the concept 
-// of exception handling using class 
+/**
+ * @brief A class to perform mathematical operations on two numbers
+ */
+class Number {
+private:
+	int a, b;
 
-#include <bits/stdc++.h> 
-using namespace std; 
+public:
+	/**
+	 * @brief Constructor for the Number class
+	 * @param x First integer number
+	 * @param y Second integer number
+	 */
+	Number(int x, int y)
+	{
+		a = x;
+		b = y;
+	}
 
-// Class declaration 
-class Number { 
-private: 
-	int a, b; 
+	/**
+	 * @brief Calculates the Greatest Common Divisor (GCD) of two numbers
+	 * @return The GCD of numbers a and b
+	 */
+	int gcd()
+	{
+		// While a is not equal to b
+		while (a != b) {
 
-public: 
-	// Constructors 
-	Number(int x, int y) 
-	{ 
-		a = x; 
-		b = y; 
-	} 
+			// Update a to a - b
+			if (a > b)
+				a = a - b;
 
-	// Function that find the GCD 
-	// of two numbers a and b 
-	int gcd() 
-	{ 
-		// While a is not equal to b 
-		while (a != b) { 
-
-			// Update a to a - b 
-			if (a > b) 
-				a = a - b; 
-
-			// Otherwise, update b 
+			// Otherwise, update b
 			else
-				b = b - a; 
-		} 
+				b = b - a;
+		}
 
-		// Return the resultant GCD 
-		return a; 
-	} 
+		// Return the resultant GCD
+		return a;
+	}
 
-	// Function to check if the 
-	// given number is prime 
-	bool isPrime(int n) 
-	{ 
-		// Base Case 
-		if (n <= 1) 
-			return false; 
+	/**
+	 * @brief Checks if a given number is prime
+	 * @param n Number to check for primality
+	 * @return true if the number is prime, false otherwise
+	 */
+	bool isPrime(int n)
+	{
+		// Base Case
+		if (n <= 1)
+			return false;
 
-		// Iterate over the range [2, N] 
-		for (int i = 2; i < n; i++) { 
+		// Iterate over the range [2, N]
+		for (int i = 2; i < n; i++) {
 
-			// If n has more than 2 
-			// factors, then return 
-			// false 
-			if (n % i == 0) 
-				return false; 
-		} 
+			// If n has more than 2
+			// factors, then return
+			// false
+			if (n % i == 0)
+				return false;
+		}
 
-		// Return true 
-		return true; 
-	} 
-}; 
+		// Return true
+		return true;
+	}
+};
 
-// Empty class 
-class MyPrimeException { 
-}; 
+/**
+ * @brief Exception class thrown when a prime number is encountered
+ */
+class MyPrimeException {
+};
 
-// Driver Code 
-int main() 
-{ 
-	int x = 13, y = 56; 
+/**
+ * @brief Main function to demonstrate Number class operations and exception handling
+ * @return 0 on successful execution
+ */
+int main()
+{
+	int x = 13, y = 56;
 
-	Number num1(x, y); 
+	Number num1(x, y);
 
-	// Print the GCD of X and Y 
+	// Print the GCD of X and Y
 	cout << "GCD is = "
-		<< num1.gcd() << endl; 
+		<< num1.gcd() << endl;
 
-	// If X is prime 
-	if (num1.isPrime(x)) 
-		cout << x 
+	// If X is prime
+	if (num1.isPrime(x))
+		cout << x
 			<< " is a prime number"
-			<< endl; 
+			<< endl;
 
-	// If Y is prime 
-	if (num1.isPrime(y)) 
-		cout << y 
+	// If Y is prime
+	if (num1.isPrime(y))
+		cout << y
 			<< " is a prime number"
-			<< endl; 
+			<< endl;
 
-	// Exception Handling 
-	if ((num1.isPrime(x)) 
-		|| (num1.isPrime(y))) { 
+	// Exception Handling
+	if ((num1.isPrime(x))
+		|| (num1.isPrime(y))) {
 
-		// Try Block 
-		try { 
-			throw MyPrimeException(); 
-		} 
+		// Try Block
+		try {
+			throw MyPrimeException();
+		}
 
-		// Catch Block 
-		catch (MyPrimeException t) { 
+		// Catch Block
+		catch (MyPrimeException t) {
 
 			cout << "Caught exception "
 				<< "of MyPrimeException "
-				<< "class." << endl; 
-		} 
-	} 
+				<< "class." << endl;
+		}
+	}
 
-	return 0; 
+	return 0;
 } 

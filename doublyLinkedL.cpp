@@ -3,7 +3,9 @@
 
 using namespace std;
 
-/*A Node for Doubly LinkedList*/
+/**
+ * @brief Node class for Doubly Linked List implementation
+ */
 class Node
 {
     /*Public Access Specifier*/
@@ -16,8 +18,11 @@ class Node
     
 }*first = NULL;/*First Node is Initialized to zero*/
 
-/*A Function that Creates Doubly Linked List*/
-/* Takes An Array and N integers as an input*/
+/**
+ * @brief Creates a Doubly Linked List from an array
+ * @param A Array containing elements to create list from
+ * @param n Number of elements in the array
+ */
 void create(int A[], int n)
 {
     /* A pointer of data type Node*/
@@ -44,6 +49,10 @@ void create(int A[], int n)
     
 }
 
+/**
+ * @brief Displays all elements in the Doubly Linked List
+ * @param p Pointer to the first node of the list
+ */
 void display( Node *p )
 {
     while(p)
@@ -56,6 +65,11 @@ void display( Node *p )
     
 }
 
+/**
+ * @brief Calculates the length of the Doubly Linked List
+ * @param p Pointer to the first node of the list
+ * @return Integer length of the list
+ */
 int Length(Node *p)
 {
     int len = 0;
@@ -69,7 +83,10 @@ int Length(Node *p)
     return len;
 }
 
-/*Into the main Function*/
+/**
+ * @brief Main function to demonstrate Doubly Linked List operations
+ * @return Integer status code (0 for successful execution)
+ */
 int main()
 {
     int A[]= {10,20,30,40,50};

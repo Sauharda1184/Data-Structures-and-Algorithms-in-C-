@@ -16,6 +16,10 @@ using namespace std;
 /**
  * @class Stack
  * @brief A class that implements a Stack using an array
+ * 
+ * This class provides a basic implementation of a Stack data structure
+ * with fixed size using an array. It supports standard stack operations
+ * like push, pop, peek, and various utility methods.
  */
 class Stack {
 private:
@@ -55,6 +59,7 @@ Stack::~Stack() {
 /**
  * @brief Pushes an element onto the stack
  * @param x The element to be pushed
+ * @throws Prints "Stack Overflow!" if the stack is full
  */
 void Stack::push(int x) {
     if (isFull()){
@@ -67,7 +72,9 @@ void Stack::push(int x) {
  
 /**
  * @brief Removes and returns the top element from the stack
- * @return The popped element, or 1 if stack is empty
+ * @return The popped element
+ * @return 1 if the stack is empty
+ * @throws Prints "Stack Underflow!" if the stack is empty
  */
 int Stack::pop() {
     int x = 1;
@@ -83,7 +90,9 @@ int Stack::pop() {
 /**
  * @brief Peeks at an element at a specific position from the top
  * @param index The position from top (0-based)
- * @return The element at the specified position, or -1 if invalid
+ * @return The element at the specified position
+ * @return -1 if the position is invalid
+ * @throws Prints "Invalid position!" if the index is out of bounds
  */
 int Stack::peek(int index) {
     int x = -1;
