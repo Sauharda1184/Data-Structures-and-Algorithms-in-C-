@@ -1,0 +1,165 @@
+\hypertarget{classStack}{}\doxysection{Stack Class Reference}
+\label{classStack}\index{Stack@{Stack}}
+
+
+A class that implements a \mbox{\hyperlink{classStack}{Stack}} using an array.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStack_a8dc60fa32e08d0b556bf66f52e0b8af8}{Stack}} (int size)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classStack}{Stack}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStack_a40bd5dff912f0e5290777c4b46d17809}\label{classStack_a40bd5dff912f0e5290777c4b46d17809}} 
+\mbox{\hyperlink{classStack_a40bd5dff912f0e5290777c4b46d17809}{$\sim$\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classStack}{Stack}} class Deallocates the dynamically allocated array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStack_afbe7194689ec0e63b2ab3243db2ff08f}{push}} (int x)
+\begin{DoxyCompactList}\small\item\em Pushes an element onto the stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStack_ad2d05ce55e7abd4a8d8ea1263be99675}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Removes and returns the top element from the stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStack_a4e7a0d2c3f1095f946cbc632cd6a5d9b}{peek}} (int index)
+\begin{DoxyCompactList}\small\item\em Peeks at an element at a specific position from the top. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStack_ae1e6e7a49205e494a3ba017a64877b3f}{is\+Full}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the stack is full. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStack_aa6b2fde9836f660ded85d0cbffaf415f}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the stack is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStack_ad2d64a259a5e8abc098373148f30d9d4}\label{classStack_ad2d64a259a5e8abc098373148f30d9d4}} 
+void \mbox{\hyperlink{classStack_ad2d64a259a5e8abc098373148f30d9d4}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays all elements in the stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStack_af2b52890051d96cc5bbf126a628ffba2}{stack\+Top}} ()
+\begin{DoxyCompactList}\small\item\em Returns the top element without removing it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that implements a \mbox{\hyperlink{classStack}{Stack}} using an array. 
+
+This class provides a basic implementation of a \mbox{\hyperlink{classStack}{Stack}} data structure with fixed size using an array. It supports standard stack operations like push, pop, peek, and various utility methods. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStack_a8dc60fa32e08d0b556bf66f52e0b8af8}\label{classStack_a8dc60fa32e08d0b556bf66f52e0b8af8}} 
+\index{Stack@{Stack}!Stack@{Stack}}
+\index{Stack@{Stack}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{Stack()}{Stack()}}
+{\footnotesize\ttfamily Stack\+::\+Stack (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classStack}{Stack}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The maximum size of the stack \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStack_aa6b2fde9836f660ded85d0cbffaf415f}\label{classStack_aa6b2fde9836f660ded85d0cbffaf415f}} 
+\index{Stack@{Stack}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily int Stack\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the stack is empty. 
+
+\begin{DoxyReturn}{Returns}
+1 if stack is empty, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStack_ae1e6e7a49205e494a3ba017a64877b3f}\label{classStack_ae1e6e7a49205e494a3ba017a64877b3f}} 
+\index{Stack@{Stack}!isFull@{isFull}}
+\index{isFull@{isFull}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily int Stack\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the stack is full. 
+
+\begin{DoxyReturn}{Returns}
+1 if stack is full, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStack_a4e7a0d2c3f1095f946cbc632cd6a5d9b}\label{classStack_a4e7a0d2c3f1095f946cbc632cd6a5d9b}} 
+\index{Stack@{Stack}!peek@{peek}}
+\index{peek@{peek}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily int Stack\+::peek (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Peeks at an element at a specific position from the top. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The position from top (0-\/based) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The element at the specified position 
+
+-\/1 if the position is invalid 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Prints} & \char`\"{}\+Invalid position!\char`\"{} if the index is out of bounds \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classStack_ad2d05ce55e7abd4a8d8ea1263be99675}\label{classStack_ad2d05ce55e7abd4a8d8ea1263be99675}} 
+\index{Stack@{Stack}!pop@{pop}}
+\index{pop@{pop}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily int Stack\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes and returns the top element from the stack. 
+
+\begin{DoxyReturn}{Returns}
+The popped element 
+
+1 if the stack is empty 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Prints} & \char`\"{}\+Stack Underflow!\char`\"{} if the stack is empty \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classStack_afbe7194689ec0e63b2ab3243db2ff08f}\label{classStack_afbe7194689ec0e63b2ab3243db2ff08f}} 
+\index{Stack@{Stack}!push@{push}}
+\index{push@{push}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Stack\+::push (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Pushes an element onto the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The element to be pushed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Prints} & \char`\"{}\+Stack Overflow!\char`\"{} if the stack is full \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classStack_af2b52890051d96cc5bbf126a628ffba2}\label{classStack_af2b52890051d96cc5bbf126a628ffba2}} 
+\index{Stack@{Stack}!stackTop@{stackTop}}
+\index{stackTop@{stackTop}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{stackTop()}{stackTop()}}
+{\footnotesize\ttfamily int Stack\+::stack\+Top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the top element without removing it. 
+
+\begin{DoxyReturn}{Returns}
+The top element, or -\/1 if stack is empty 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sauharda/\+Desktop/\+Data-\/\+Structures-\/and-\/\+Algorithms-\/in-\/\+C-\//stackover\+Flow.\+cpp\end{DoxyCompactItemize}

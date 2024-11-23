@@ -1,0 +1,109 @@
+\hypertarget{classQueue}{}\doxysection{Queue Class Reference}
+\label{classQueue}\index{Queue@{Queue}}
+
+
+A class implementing a basic queue data structure using an array.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classQueue_a700a33f52783f25b9ebd25d67ffb504a}{Queue}} (int size)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classQueue}{Queue}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classQueue_a00d119db8fa3050da37746e82cbcf94f}\label{classQueue_a00d119db8fa3050da37746e82cbcf94f}} 
+\mbox{\hyperlink{classQueue_a00d119db8fa3050da37746e82cbcf94f}{$\sim$\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classQueue}{Queue}} object and frees allocated memory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classQueue_a794d36459217d30fe1324fc9f435274b}{is\+Full}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the queue is full. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classQueue_a65d9b23c23c917faa44981539bc34be7}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the queue is empty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classQueue_a6847c4a489cbb7b423564bc892d6735c}{enqueue}} (int x)
+\begin{DoxyCompactList}\small\item\em Adds an element to the rear of the queue. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classQueue_a749f9bc8077f6b94f242840a5583268a}{dequeue}} ()
+\begin{DoxyCompactList}\small\item\em Removes and returns the front element from the queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classQueue_a3e0d42ab9a74d1c915fea58e4067e385}\label{classQueue_a3e0d42ab9a74d1c915fea58e4067e385}} 
+void \mbox{\hyperlink{classQueue_a3e0d42ab9a74d1c915fea58e4067e385}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays all elements in the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class implementing a basic queue data structure using an array. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQueue_a700a33f52783f25b9ebd25d67ffb504a}\label{classQueue_a700a33f52783f25b9ebd25d67ffb504a}} 
+\index{Queue@{Queue}!Queue@{Queue}}
+\index{Queue@{Queue}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{Queue()}{Queue()}}
+{\footnotesize\ttfamily Queue\+::\+Queue (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classQueue}{Queue}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The maximum size of the queue \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classQueue_a749f9bc8077f6b94f242840a5583268a}\label{classQueue_a749f9bc8077f6b94f242840a5583268a}} 
+\index{Queue@{Queue}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily int Queue\+::dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes and returns the front element from the queue. 
+
+\begin{DoxyReturn}{Returns}
+The front element if queue is not empty, -\/1 if queue is empty 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQueue_a6847c4a489cbb7b423564bc892d6735c}\label{classQueue_a6847c4a489cbb7b423564bc892d6735c}} 
+\index{Queue@{Queue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void Queue\+::enqueue (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Adds an element to the rear of the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The element to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classQueue_a65d9b23c23c917faa44981539bc34be7}\label{classQueue_a65d9b23c23c917faa44981539bc34be7}} 
+\index{Queue@{Queue}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Queue\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+true if queue is empty, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQueue_a794d36459217d30fe1324fc9f435274b}\label{classQueue_a794d36459217d30fe1324fc9f435274b}} 
+\index{Queue@{Queue}!isFull@{isFull}}
+\index{isFull@{isFull}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily bool Queue\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the queue is full. 
+
+\begin{DoxyReturn}{Returns}
+true if queue is full, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sauharda/\+Desktop/\+Data-\/\+Structures-\/and-\/\+Algorithms-\/in-\/\+C-\//enqueue.\+cpp\end{DoxyCompactItemize}

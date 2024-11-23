@@ -1,3 +1,13 @@
+/**
+ * @file enqueue.cpp
+ * @author Sauharda Shrestha (sauhardameher@gmail.com)
+ * @brief Implementation of Queue DS in C++
+ * @version 0.1
+ * @date 2024-11-23
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <iostream>
 
 using namespace std;

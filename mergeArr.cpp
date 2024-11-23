@@ -1,3 +1,13 @@
+/**
+ * @file mergeArr.cpp
+ * @author Sauharda Shrestha (sauhardameher@gmail.com)
+ * @brief Merging Two Arrays
+ * @version 0.1
+ * @date 2024-11-23
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <iostream>
 #include <cstdlib>
  

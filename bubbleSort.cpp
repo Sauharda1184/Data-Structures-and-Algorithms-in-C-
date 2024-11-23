@@ -1,3 +1,13 @@
+/**
+ * @file bubbleSort.cpp
+ * @author Sauharda Meher Shrestha(sauhardameher@gmail.com)
+ * @brief This file demonstrates the use of Bubble Sort Algorithm
+ * @version 0.1
+ * @date 2024-11-23
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <iostream>
 
 using namespace std;

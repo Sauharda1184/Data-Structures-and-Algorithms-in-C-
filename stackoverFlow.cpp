@@ -10,6 +10,16 @@
  * - Stack status checking (empty/full)
  */
 
+/**
+ * @file stackoverFlow.cpp
+ * @author  Sauharda (sauhardameher@gmail.com)
+ * @brief  This file follows the LIFO PATTERM
+ * @version 0.1
+ * @date 2024-11-23
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <iostream>
 using namespace std;
  

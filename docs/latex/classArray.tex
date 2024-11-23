@@ -1,0 +1,137 @@
+\hypertarget{classArray}{}\doxysection{Array Class Reference}
+\label{classArray}\index{Array@{Array}}
+
+
+Class representing an array data structure.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArray_a69bf933c2d9e048ed6c11fd19e2da583}{Array}} (int size)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classArray}{Array}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArray_ab6193370a5630bab71364fe621211cc5}{create}} ()
+\begin{DoxyCompactList}\small\item\em Creates an array by taking user input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArray_afc74dcc56f4ec955ad3a29295efc25d7}\label{classArray_afc74dcc56f4ec955ad3a29295efc25d7}} 
+void \mbox{\hyperlink{classArray_afc74dcc56f4ec955ad3a29295efc25d7}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays all elements in the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArray_abcabe567f41f7798d2f97babcc443c6f}\label{classArray_abcabe567f41f7798d2f97babcc443c6f}} 
+\mbox{\hyperlink{classArray_abcabe567f41f7798d2f97babcc443c6f}{$\sim$\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to free allocated memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArray_a445e0ff7cd44cd3ceab6629fe471e2db}{Array}} (int size, int length, bool sorted=false)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classArray}{Array}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArray_af9fe278336fc119cbbb0af6617a88638}{Get}} (int index)
+\begin{DoxyCompactList}\small\item\em Retrieves element at specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArray_a919a9e5b107fe6998ad7bf91cde9d3c2}{Set}} (int index, int x)
+\begin{DoxyCompactList}\small\item\em Sets element at specified index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArray_afc74dcc56f4ec955ad3a29295efc25d7}\label{classArray_afc74dcc56f4ec955ad3a29295efc25d7}} 
+void \mbox{\hyperlink{classArray_afc74dcc56f4ec955ad3a29295efc25d7}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays all elements of the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArray_a918de4c24928aeed53bbb9b593ccd066}\label{classArray_a918de4c24928aeed53bbb9b593ccd066}} 
+\mbox{\hyperlink{classArray}{Array}} {\bfseries Merge} (\mbox{\hyperlink{classArray}{Array}} \&B)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArray_aa94ed585c8aa61afecd45d0a8ca2def2}\label{classArray_aa94ed585c8aa61afecd45d0a8ca2def2}} 
+int \mbox{\hyperlink{classArray_aa94ed585c8aa61afecd45d0a8ca2def2}{A}} \mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em The array of integers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing an array data structure. 
+
+A class that implements dynamic array operations.
+
+A class representing a dynamic integer array with merge capabilities. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArray_a69bf933c2d9e048ed6c11fd19e2da583}\label{classArray_a69bf933c2d9e048ed6c11fd19e2da583}} 
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Array\+::\+Array (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \mbox{\hyperlink{classArray}{Array}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The maximum size of the array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArray_a445e0ff7cd44cd3ceab6629fe471e2db}\label{classArray_a445e0ff7cd44cd3ceab6629fe471e2db}} 
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Array\+::\+Array (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{length,  }\item[{bool}]{sorted = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an \mbox{\hyperlink{classArray}{Array}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The maximum capacity of the array \\
+\hline
+{\em length} & The initial number of elements \\
+\hline
+{\em sorted} & If true, prompts user for sorted input; if false, generates random numbers \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArray_ab6193370a5630bab71364fe621211cc5}\label{classArray_ab6193370a5630bab71364fe621211cc5}} 
+\index{Array@{Array}!create@{create}}
+\index{create@{create}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Array\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an array by taking user input. 
+
+Prompts user to enter length and elements of the array \mbox{\Hypertarget{classArray_af9fe278336fc119cbbb0af6617a88638}\label{classArray_af9fe278336fc119cbbb0af6617a88638}} 
+\index{Array@{Array}!Get@{Get}}
+\index{Get@{Get}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily int Array\+::\+Get (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves element at specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The position to access \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The element at the given index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArray_a919a9e5b107fe6998ad7bf91cde9d3c2}\label{classArray_a919a9e5b107fe6998ad7bf91cde9d3c2}} 
+\index{Array@{Array}!Set@{Set}}
+\index{Set@{Set}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void Array\+::\+Set (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets element at specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The position to modify \\
+\hline
+{\em x} & The value to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sauharda/\+Desktop/\+Data-\/\+Structures-\/and-\/\+Algorithms-\/in-\/\+C-\//\mbox{\hyperlink{Arrayadt_8cpp}{Arrayadt.\+cpp}}\item 
+/home/sauharda/\+Desktop/\+Data-\/\+Structures-\/and-\/\+Algorithms-\/in-\/\+C-\//iterative\+BSearch.\+cpp\item 
+/home/sauharda/\+Desktop/\+Data-\/\+Structures-\/and-\/\+Algorithms-\/in-\/\+C-\//merge\+Arr.\+cpp\end{DoxyCompactItemize}
