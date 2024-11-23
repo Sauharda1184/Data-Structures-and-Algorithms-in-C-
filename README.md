@@ -1,9 +1,13 @@
 # Data-Structures-and-Algorithms-in-C-PLUS-PLUS
-##An Implementation of Data Structures in C++
-###The data structures :
-Array
-LinkedList
-Doubly LinkedList
-Stack
-Queue
+##BRIEF
+This repository is aimed to demonstrate my understanding of Data Structures and Algorithms in C++
+
+##The data structures :
+###Array
+###LinkedList
+###Doubly LinkedList
+###Stack
+###Queue
+
+
 
